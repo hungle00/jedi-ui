@@ -1,0 +1,17 @@
+@each $color in (
+  primary,
+  primary-rotate,
+  primary-bg,
+  secondary,
+  secondary-rotate,
+  tertiary,
+  glint,
+  surface,
+  "white",
+  "light",
+  "dark"
+) {
+  .bg-#{$color} {
+    background-color: var(--color-#{$color});
+  }
+};
