@@ -15,11 +15,7 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
-
-  background-color: var(--color-surface);
   color: var(--color-text-body);
   line-height: var(--line-height-body);
   font-family: var(--font-family-sans);

@@ -1,9 +1,4 @@
-.quote {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-s);
-
+.card {
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-small);
@@ -12,6 +7,22 @@
 
   @include media(tabletAndUp) {
     padding: var(--space-xs) var(--space-m);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-s);
+  }
+
+  &__title {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+  }
+
+  &__body {
+    margin-top: var(--space-m);
   }
 
   &__actions {

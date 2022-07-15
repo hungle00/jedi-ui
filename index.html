@@ -5,7 +5,7 @@
     <title>Jedi UI</title>
     <link rel="stylesheet" href="dist/index.css">
   </head>
-  <body>
+  <body class="bg-surface display-flex flex-direction-column">
     <header class="navbar">
         <div class="navbar__brand">
         Jedi
@@ -20,27 +20,61 @@
         <h1>Quotes</h1>
         <button class="btn btn--dark">Hello there</button>
       </div>
-      <div class="empty-state">
+      <div class="empty-state border-radius-s">
         <p class="empty-state__text">
           You don't have any quotes yet!
         </p>
         <a href="#" class="btn btn--primary">Haha</a>
       </div>
 
-      <div class="display-flex gap-xl margin-top-m">
-        <div class="padding-x-l padding-y-s bg-glint">
-          column 1
+      <div class="flash">
+        <div class="flash__message">Test flash</div>
+      </div>
+      <div class="margin-top-3xl card">
+        <div class="card__header">
+          <p class="card__title">First post</p>
+          <div class="card__actions">
+            <a class="btn btn--secondary">Follow</a>
+          </div>
         </div>
-        <div class="padding-x-l padding-y-s bg-tertiary">
-          column 2
+        <div class="card__body">Even if you work smart, you still have to work hard.</div>
+      </div>
+      <div class="margin-l display-flex justify-content-space-around">
+        <div>
+          <div class="squaredcheck">
+            <input type="checkbox" value="None" id="squaredcheck" name="check" checked />
+            <label for="squaredcheck"><span>Checkbox 1</span></label>
+          </div>
+          <div class="squaredcheck">
+            <input type="checkbox" value="None" id="squaredcheck2" name="check"  />
+            <label for="squaredcheck2"><span>Checkbox 2</span></label>
+          </div>
+          <div class="squaredcheck">
+            <input type="checkbox" value="None" id="squaredcheck3" name="check"  />
+            <label for="squaredcheck3"><span>Checkbox 3</span></label>
+          </div>
         </div>
-        <div class="padding-x-l padding-y-s">
-          column 3
+        <div>
+          <div class="circlecheck">
+            <input type="radio" id="f-option" class="circle" name="selector" checked>
+            <label for="f-option">Radio button 1</label>
+            <div class="outer-circle"></div>
+          </div>
+          <div class="circlecheck">
+            <input type="radio" id="g-option" class="circle" name="selector">
+            <label for="g-option">Radio button 2</label>
+            <div class="outer-circle"></div>
+          </div>
+          <div class="circlecheck">
+            <input type="radio" id="h-option" class="circle" name="selector">
+            <label for="h-option">Radio button 3</label>
+            <div class="outer-circle"></div>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="quote-footer">
-      <div class="quote-footer__inner container">
+    <footer class="footer">
+      <div class="footer__inner container">
         <div>Obi-wan</div>
         <div>Anakin</div>
       </div>
