@@ -1,14 +1,23 @@
 {
   "name": "jedi-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple and funny css library",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx sass application.scss dist/index.css --no-source-map"
+    "build:css": "npx sass application.scss dist/index.css --no-source-map",
+    "minify:css": "npx sass application.scss dist/index.css --style=compressed"
+  },
+  "files": [
+    "dist/*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hungle00/jedi-ui"
   },
   "keywords": [],
-  "author": "",
+  "author": "hungle00",
   "license": "ISC",
+  "homepage": "https://hungle00.github.io/jedi-ui/",
   "devDependencies": {
     "sass": "^1.53.0"
   }

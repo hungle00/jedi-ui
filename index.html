@@ -7,18 +7,25 @@
   </head>
   <body class="bg-surface display-flex flex-direction-column">
     <header class="navbar">
-        <div class="navbar__brand">
+      <div class="navbar__brand">
         Jedi
-          </div>
-          <div class="navbar__name">
+      </div>
+      <div class="navbar__name">
         Obi-wan
-          </div>
-        <button class="btn btn--dark">Hello</button>
+      </div>
+      <button class="btn btn--dark">Hello</button>
     </header>
     <main class="container">
       <div class="header">
         <h1>Quotes</h1>
-        <button class="btn btn--dark">Hello there</button>
+        <div class="dropdown dropdown--right">
+          <label tabindex="0" class="btn btn--primary">Default</label>
+          <div tabindex="0" class="dropdown__container">
+            <a class="dropdown__item" href="#">Dropdown item</a>
+            <a class="dropdown__item" href="#">Dropdown item</a>
+            <a class="dropdown__item" href="#">Dropdown item</a>
+          </div>
+        </div>
       </div>
       <div class="empty-state border-radius-s">
         <p class="empty-state__text">
