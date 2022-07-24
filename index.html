@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jedi UI</title>
     <link rel="stylesheet" href="dist/index.css">
   </head>
@@ -16,7 +18,7 @@
       <button class="btn btn--dark">Hello</button>
     </header>
     <main class="container">
-      <div class="header">
+      <div class="display-flex flex-wrap justify-content-space-between margin-top-m padding-bottom-l">
         <h1>Quotes</h1>
         <div class="dropdown dropdown--right">
           <label tabindex="0" class="btn btn--primary">Default</label>
@@ -47,7 +49,7 @@
         <div class="card__body">Even if you work smart, you still have to work hard.</div>
       </div>
       <div class="margin-l display-flex justify-content-space-around">
-        <div>
+        <div class="margin-right-xl">
           <div class="squaredcheck">
             <input type="checkbox" value="None" id="squaredcheck" name="check" checked />
             <label for="squaredcheck"><span>Checkbox 1</span></label>
@@ -61,7 +63,8 @@
             <label for="squaredcheck3"><span>Checkbox 3</span></label>
           </div>
         </div>
-        <div>
+
+        <div class="margin-left-xl">
           <div class="circlecheck">
             <input type="radio" id="f-option" class="circle" name="selector" checked>
             <label for="f-option">Radio button 1</label>

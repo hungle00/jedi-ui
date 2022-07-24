@@ -1,0 +1,49 @@
+.sidebar {
+  position: fixed;
+  width: auto;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  @include media(tabletAndUp) {
+    position: static;
+    width: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.sidebar__container {
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-surface);
+  overflow: auto;
+  width: 300px;
+  z-index: 1;
+  padding: 12px;
+}
+
+.sidebar__item {
+  padding: 18px 24px;
+  display: flex;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  align-items: center;
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    filter: brightness(112%);
+  }
+}
