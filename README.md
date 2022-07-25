@@ -13,7 +13,39 @@ Then require in your HTML page:
 <link rel="stylesheet" href="node_modules/jedi-ui/dist/index.css">
 ```
 
-## How to use
+## 📘 Documents
+
+<details>
+<summary>
+  show / hide
+</summary>
 
 - Components
+  - [x] Button
+  - [x] Dropdown
+  - [x] Tooltip
+  - [x] Card
+  - [x] Form
+  - [x] Checkbox
+  - [x] Radio Button
+  - [ ] Select
+  - [ ] Toogle
+  - [x] Flash
+  - [x] Error Message
+  - [x] Empty State
+  - [ ] Table
+  - [ ] Collapse
+  - [ ] Progress
+  - [x] Navbar
+  - [x] Sidebar
+  - [x] Footer
+
+
 - Utilities
+  - [x] Background
+  - [ ] Text
+  - [x] Border
+  - [x] Flex
+  - [x] Spacing
+
+</details>
