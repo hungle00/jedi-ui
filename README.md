@@ -35,6 +35,7 @@ Then require in your HTML page:
   - [x] Empty State
   - [ ] Table
   - [ ] Collapse
+  - [x] Steps
   - [ ] Progress
   - [x] Navbar
   - [x] Sidebar

@@ -1,53 +1,50 @@
 .tooltip {
   position: relative;
   display: inline-block;
-}
+  --tooltip-tail: 3px;
 
-.tooltip:before {
-  position: absolute;
-  pointer-events: none;
-  content: attr(data-tip);
-  transform: translate(-50%);
-  top: auto;
-  left: 50%;
-  right: auto;
-  bottom: calc(100% + 2px);
-  max-width: 20rem;
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  background-color: var(--color-primary);
-  color: white;
-  width: max-content;
-}
+  &:before {
+    position: absolute;
+    pointer-events: none;
+    content: attr(data-tip);
+    transform: translate(-50%);
+    top: auto;
+    left: 50%;
+    right: auto;
+    bottom: calc(100% + var(--tooltip-tail));
+    max-width: 20rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-s);
+    line-height: 1.25rem;
+    background-color: var(--color-primary);
+    color: white;
+    width: max-content;
+  }
 
-.tooltip:after {
-  position: absolute;
-  content: "";
-  border-style: solid;
-  border-width: 3px;
-  width: 0;
-  height: 0;
-  display: block;
-  transform: translate(-50%);
-  border-color: var(--color-primary);
-  top: auto;
-  left: 50%;
-  right: auto;
-  bottom: 100%;
-}
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    transform: translate(-50%);
+    border: 3px solid transparent;
+    border-top: 3px solid var(--color-primary);
+    top: auto;
+    left: 50%;
+    right: auto;
+    bottom: calc(100% - var(--tooltip-tail));
+  }
 
-.tooltip:hover:before,
-.tooltip:hover:after {
-  opacity: 1;
-  transition-delay: 75ms;
-}
-
-.tooltip:before,
-.tooltip:after {
-  opacity: 0;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover:after, &:hover:before {
+    opacity: 1;
+    transition-delay: 75ms;
+  }
+  &:before, &:after {
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

@@ -1,0 +1,50 @@
+.steps {
+  width: min(100%, 600px);
+  background: white;
+  display: flex;
+  height: 60px;
+  position: relative;
+  --dot-width: 20px;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  .step {
+    flex: 1 1 auto;
+    text-align: center;
+    align-self: center;
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    list-style-type: none;
+    position: relative;
+
+    &:before {
+      content: counter(step);
+      counter-increment: step;
+      width: var(--dot-width);
+      line-height: var(--dot-width);
+      display: block;
+      font-size: 10px;
+      color: white;
+      background-color: var(--color-text-muted);
+      border-radius: 50%;
+      margin: 0 auto 5px auto;
+    }
+    /*progressbar connectors*/
+    &:after {
+      content: '';
+      width: calc(100% - var(--dot-width));
+      height: 3px;
+      background: var(--color-text-muted);
+      position: absolute;
+      left: calc(-50% + var(--dot-width) / 2);
+      top: 8px;
+    }
+    &:first-child:after {
+      /*connector not needed before the first step*/
+      content: none; 
+    }
+    
+    &.active:after, &.active:before {
+      background: var(--color-primary);
+    }
+  }
+}
