@@ -13,6 +13,11 @@ Then require in your HTML page:
 <link rel="stylesheet" href="node_modules/jedi-ui/dist/index.css">
 ```
 
+Or use a CDN
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.0.1/dist/index.css">
+```
+
 ## 📘 Documents
 
 <details>

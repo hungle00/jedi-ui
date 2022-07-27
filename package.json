@@ -1,11 +1,11 @@
 {
   "name": "jedi-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "May the force be with you",
   "main": "index.js",
   "scripts": {
     "build:css": "npx sass application.scss dist/index.css --no-source-map",
-    "minify:css": "npx sass application.scss dist/index.css --style=compressed"
+    "minify:css": "npx sass application.scss dist/index.css --style=compressed --no-source-map"
   },
   "files": [
     "dist/*.css"
