@@ -7,15 +7,21 @@
 @import "config/reset";
 @import "config/animations";
 
+// Utilities
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/spacing";
+@import "utilities/background";
+@import "utilities/border";
+@import "utilities/text";
+@import "utilities/sizing";
+
 // Components
 @import "components/btn";
 @import "components/form";
 @import "components/card";
-@import "components/checkbox";
-@import "components/radio_button";
 @import "components/drowdown";
 @import "components/tooltip";
-@import "components/sidebar";
 @import "components/steps";
 
 @import "components/error_message";
@@ -27,10 +33,3 @@
 @import "components/navbar";
 @import "components/sidebar";
 @import "components/layout";
-
-// Utilities
-@import "utilities/display";
-@import "utilities/flex";
-@import "utilities/spacing";
-@import "utilities/background";
-@import "utilities/border"

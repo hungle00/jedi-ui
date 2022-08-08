@@ -1,0 +1,53 @@
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-header {
+  color: var(--color-text-header);
+}
+
+.text-body {
+  color: var(--color-text-body);
+}
+
+.text-muted{
+  color: var(--color-text-muted);
+}
+
+.text-error {
+  color: var(--color-warning);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-break-word {
+  word-wrap: break-word;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

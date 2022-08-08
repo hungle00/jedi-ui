@@ -10,4 +10,10 @@
     padding-left: var(--space-m);
     max-width: 60rem;
   }
+
+  &--lg {
+    @include media(tabletAndUp) {
+      max-width: 90%;
+    }
+  }
 }
