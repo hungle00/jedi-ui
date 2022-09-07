@@ -15,9 +15,9 @@
     max-width: 20rem;
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-0);
     line-height: 1.25rem;
-    background-color: var(--color-primary);
+    background-color: var(--indigo-6);
     color: white;
     width: max-content;
   }
@@ -30,7 +30,7 @@
     display: block;
     transform: translate(-50%);
     border: 3px solid transparent;
-    border-top: 3px solid var(--color-primary);
+    border-top: 3px solid var(--indigo-6);
     top: auto;
     left: 50%;
     right: auto;

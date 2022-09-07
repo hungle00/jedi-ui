@@ -28,9 +28,9 @@
   }
 }
 
-@each $size in (2xs, xs, s, m, l, xl, 2xl, 3xl, 4xl) {
-  .gap-#{$size} {
-    gap: var(--space-#{$size});
+@for $s from 1 through 10 {
+  .gap-#{$s} {
+    gap: var(--size-#{$s});
   }
 }
 

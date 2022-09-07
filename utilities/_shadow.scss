@@ -1,0 +1,11 @@
+@for $i from 1 through 6 {
+  .shadow-#{$i} {
+    box-shadow: var(--shadow-#{$i});
+  }
+}
+
+@for $i from 0 through 4 {
+  .inner-shadow-#{$i} {
+    box-shadow: var(--inner-shadow-#{$i});
+  }
+}

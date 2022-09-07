@@ -1,25 +1,16 @@
-.text-primary {
-  color: var(--color-primary);
-}
+$colors: gray,red, pink, grape, violet, indigo, blue, cyan, teal, green, lime, yellow, orange;
+@each $color in $colors {
+  @each $i in (3, 7, 5, 9) {
+    .text-#{"" + $color}-#{$i} {
+      color: var(--#{$color}-#{$i});
+    }
+  }
+};
 
-.text-secondary {
-  color: var(--color-secondary);
-}
-
-.text-header {
-  color: var(--color-text-header);
-}
-
-.text-body {
-  color: var(--color-text-body);
-}
-
-.text-muted{
-  color: var(--color-text-muted);
-}
-
-.text-error {
-  color: var(--color-warning);
+@for $size from 0 through 8 {
+  .font-size-#{$size} {
+    font-size: var(--font-size-#{$size});
+  }
 }
 
 .text-left {

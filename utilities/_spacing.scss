@@ -1,22 +1,22 @@
 @each $type in (margin, padding) {
-  @each $size in (2xs, xs, s, m, l, xl, 2xl, 3xl, 4xl) {
-    .#{$type}-#{$size} {
-      #{$type}: var(--space-#{$size});
+  @for $s from 1 through 10 {
+    .#{$type}-#{$s} {
+      #{$type}: var(--size-#{$s});
     }
 
-    .#{$type}-x-#{$size} {
-      #{$type}-left: var(--space-#{$size});
-      #{$type}-right: var(--space-#{$size});
+    .#{$type}-x-#{$s} {
+      #{$type}-left: var(--size-#{$s});
+      #{$type}-right: var(--size-#{$s});
     }
 
-    .#{$type}-y-#{$size} {
-      #{$type}-top: var(--space-#{$size});
-      #{$type}-bottom: var(--space-#{$size});
+    .#{$type}-y-#{$s} {
+      #{$type}-top: var(--size-#{$s});
+      #{$type}-bottom: var(--size-#{$s});
     }
 
     @each $side in (top, left, right, bottom) {
-      .#{$type}-#{$side}-#{$size} {
-        #{$type}-#{$side}: var(--space-#{$size});
+      .#{$type}-#{$side}-#{$s} {
+        #{$type}-#{$side}: var(--size-#{$s});
       }
     }
   }
