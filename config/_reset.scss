@@ -48,7 +48,7 @@
   border-width: 0;
 }
 :where(:not(:active):focus-visible) {
-  outline-offset: 5px;
+  outline-offset: 1px;
 }
 :where(body) {
   min-block-size: 100%;
@@ -123,8 +123,8 @@
   letter-spacing: inherit;
 }
 :where(input, textarea) {
-  padding-block: var(--size-1);
-  padding-inline: var(--size-2);
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
 }
 :where(select) {
   padding-block: 0.75ch;

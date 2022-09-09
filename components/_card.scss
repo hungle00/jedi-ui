@@ -1,34 +1,33 @@
 .card {
-  background-color: var(--color-white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-small);
-  margin-bottom: var(--space-m);
-  padding: var(--space-xs);
+  background-color: var(--gray-0);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-3);
+  padding: var(--size-2);
 
   @include media(tabletAndUp) {
-    padding: var(--space-xs) var(--space-m);
+    padding: var(--size-2) var(--size-3);
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--space-s);
+    gap: var(--size-2);
   }
 
   &__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-3);
     font-weight: bold;
   }
 
   &__body {
-    margin-top: var(--space-m);
+    margin-top: var(--size-3);
   }
 
   &__actions {
     display: flex;
     flex: 0 0 auto;
     align-self: flex-start;
-    gap: var(--space-xs);
+    gap: var(--size-2);
   }
 }

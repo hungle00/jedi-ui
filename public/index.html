@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jedi UI</title>
-    <link rel="stylesheet" href="dist/index.css">
+    <link rel="stylesheet" href="../dist/index.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body class="display-flex">
@@ -13,7 +13,7 @@
     <div class="sidebar flex-shrink-0">
       <div class="sidebar__container">
         <h2 class="padding-5">Jedi UI</h2>
-        <a href="#introduction" class="sidebar__item">Introduction</a>
+        <a href="landing.html" class="sidebar__item">Introduction</a>
         <a href="#installation" class="sidebar__item">Installation</a>
         <details>
           <summary class="sidebar__item">
@@ -78,7 +78,7 @@
 
         <section id="utilities" class="margin-4">
           <h2 class="margin-bottom-2">Utilities</h2>
-          <div id="box-shadow" class="margin-bottom-3">
+          <div id="box-shadow">
             <h4 class="margin-bottom-2">Box shadow</h4>
             <div class="display-flex flex-direction-row gap-3">
               <div class="demo-box shadow-2">.shadow-2</div>
@@ -86,14 +86,14 @@
               <div class="demo-box shadow-4">.shadow-4</div>
             </div>
           </div>
-          <div id="font" class="margin-bottom-3">
+          <div id="font">
             <h4 class="margin-bottom-2">Font size</h4>
             <p class="font-size-1">.font-size-1</p>
             <p class="font-size-2">.font-size-2</p>
             <p class="font-size-3">.font-size-3</p>
             <p class="font-size-4">.font-size-4</p>
           </div>
-          <div id="text" class="margin-bottom-3">
+          <div id="text">
             <h4 class="margin-bottom-2">Tex style</h4>
             <p class="text-indigo-7">Text Primary</p>
             <p class="text-red-7 text-center">Text Error Center</p>
@@ -125,9 +125,53 @@
             </div>
           </div>
           <div id="tooltip">
-            <h4 class="margin-bottom-2">Tooltip</h2>
+            <h4 class="margin-bottom-2">Tooltip</h4>
             <div class="tooltip" data-tip="i love you">
               <button class="btn btn--primary">Hover me</button>
+            </div>
+          </div>
+          <div id="flase">
+            <h4 class="margin-bottom-2">Flash message</h4>
+            <div class="flash flash-success margin-y-1">
+              <div class="flash__message">Flash Success!</div>
+            </div>
+            <div class="flash flash-danger flash-animation margin-y-1">
+              <div class="flash__message">Flash Danger Animation!</div>
+            </div>
+          </div>
+          <div id="card">
+            <h4 class="margin-bottom-2">Card</h4>
+            <div class="card">
+              <div class="card__header">
+                <p class="card__title">First post</p>
+                <div class="card__actions">
+                  <a class="btn btn--secondary">Follow</a>
+                </div>
+              </div>
+              <div class="card__body">Even if you work smart, you still have to work hard.</div>
+            </div>
+          </div>
+          <div id="tab">
+            <h4 class="margin-bottom-2">Tab</h4>
+            <div class="tabs margin-bottom-6">
+              <ul class="tabs__header">
+                <li class="active">Profile</li>
+                <li>Dashboard</li>
+                <li>Settings</li>
+                <li>Contacts</li>
+              </ul>
+              <div class="tabs__content--active">
+                <h4>Profile</h4>
+              </div>
+              <div class="tabs__content">
+                <h4>Dashboard</h4>
+              </div>
+              <div class="tabs__content">
+                <h4>Settings</h4>
+              </div>
+              <div class="tabs__content">
+                <h4>Contacts</h4>
+              </div>
             </div>
           </div>
         </section>

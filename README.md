@@ -1,5 +1,5 @@
 # Jedi UI
-May the force be with you [View Demo](https://hungle00.github.io/jedi-ui/)
+May the force be with you [View Demo](https://jedi-ui-hungle2048.vercel.app/)
 
 ## Installation
 

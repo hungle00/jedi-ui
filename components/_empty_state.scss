@@ -1,13 +1,13 @@
 .empty-state {
-  padding: var(--space-m);
+  padding: var(--size-3);
   border: var(--border);
   border-style: dashed;
   text-align: center;
 
   &__text {
-    font-size: var(--font-size-l);
-    color: var(--color-text-header);
-    margin-bottom: var(--space-l);
+    font-size: var(--font-size-2);
+    color: var(--gray-8);
+    margin-bottom: var(--size-5);
     font-weight: bold;
   }
 }
