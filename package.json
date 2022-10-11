@@ -17,7 +17,7 @@
   "keywords": [],
   "author": "hungle00",
   "license": "ISC",
-  "homepage": "https://hungle00.github.io/jedi-ui/",
+  "homepage": "https://jedi-ui-hungle2048.vercel.app/",
   "devDependencies": {
     "sass": "^1.53.0"
   }

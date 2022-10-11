@@ -15,7 +15,7 @@ Then require in your HTML page:
 
 Or use a CDN
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.0.1/dist/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.1.0/dist/index.css">
 ```
 
 ## 📘 Documents
