@@ -148,9 +148,6 @@
 :where(code, kbd, samp, pre) {
   font-family: var(--font-mono);
 }
-:where(:not(pre) > code, kbd) {
-  white-space: nowrap;
-}
 :where(pre) {
   max-inline-size: max-content;
   min-inline-size: 0;

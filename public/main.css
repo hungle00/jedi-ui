@@ -17,8 +17,9 @@ code {
   margin-top: var(--size-1);
   padding: var(--size-2);
   background-color: var(--gray-2);
-  width: 100%;
   display: block;
+  overflow-x: auto;
+  max-width: calc(100vw - 2rem);
 }
 
 h2, h3, h4, h5 {

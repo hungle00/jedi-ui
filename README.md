@@ -1,5 +1,5 @@
 # Jedi UI
-May the force be with you [View Demo](https://jedi-ui-hungle2048.vercel.app/)
+Jedi UI is CSS library base on open-props design system [View Demo](https://jedi-ui-hungle2048.vercel.app/)
 
 ## Installation
 
@@ -30,13 +30,13 @@ Or use a CDN
   - [x] Dropdown
   - [x] Tooltip
   - [x] Card
-  - [x] Form
-  - [x] Checkbox
-  - [x] Radio Button
+  - [x] Modal
+  - [x] Tab
+  - [ ] Checkbox
+  - [ ] Radio Button
   - [ ] Select
   - [ ] Toogle
   - [x] Flash
-  - [x] Error Message
   - [x] Empty State
   - [ ] Table
   - [ ] Collapse
@@ -49,8 +49,9 @@ Or use a CDN
 
 - Utilities
   - [x] Background
-  - [ ] Text
+  - [x] Text & font
   - [x] Border
+  - [x] Shadow
   - [x] Flex
   - [x] Spacing
 
