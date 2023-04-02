@@ -1,0 +1,12 @@
+.progress-wrapper {
+  background-color: var(--gray-2);
+  border-radius: var(--radius-2);
+  height: 12px;
+  overflow: hidden;
+
+  .progress {
+  	min-height: 100%;
+    background-color: var(--indigo-7);
+    width: 30%;
+  }
+}

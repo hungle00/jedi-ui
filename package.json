@@ -1,6 +1,6 @@
 {
   "name": "jedi-ui",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "May the force be with you",
   "main": "index.js",
   "scripts": {
