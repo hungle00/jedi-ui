@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jedi UI</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.1.0/dist/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.2.0/dist/index.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body class="display-flex">
@@ -139,7 +139,7 @@
               <div class="flash__message">Flash Danger Animation!</div>
             </div>
           </div>
-          <div id="card">
+          <div id="card" class="width-75">
             <h4 class="margin-bottom-2">Card</h4>
             <div class="card">
               <div class="card__header">
@@ -151,6 +151,14 @@
               <div class="card__body">Even if you work smart, you still have to work hard.</div>
             </div>
           </div>
+
+          <div id="progress">
+            <h4 class="margin-bottom-2">Progress</h4>
+            <div class="progress-wrapper width-75">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+
           <div id="tab">
             <h4 class="margin-bottom-2">Tab</h4>
             <div class="tabs margin-bottom-6">
@@ -174,17 +182,18 @@
               </div>
             </div>
           </div>
+
           <div id="modal">
             <button id="open-modal" class="btn btn--primary">Open modal</button>
             <div class="modal display-none">
               <div class="modal__content">
                 <a class="modal__close" id="hide-modal">✖</a>
                 <h2>New post</h2>
-          
                 <p>This is modal</p>
               </div>
             </div>
           </div>
+
         </section>
       </main>
     </div>

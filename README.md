@@ -15,7 +15,7 @@ Then require in your HTML page:
 
 Or use a CDN
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.1.0/dist/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jedi-ui@1.2.0/dist/index.css">
 ```
 
 ## 📘 Documents
@@ -41,7 +41,7 @@ Or use a CDN
   - [ ] Table
   - [ ] Collapse
   - [x] Steps
-  - [ ] Progress
+  - [x] Progress
   - [x] Navbar
   - [x] Sidebar
   - [x] Footer
